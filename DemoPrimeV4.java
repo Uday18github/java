@@ -1,0 +1,29 @@
+public class DemoPrimeV4{
+    public static void main(String args[]){
+        int num=50,flag=0;int j,i;
+        for(i=2;i<=num;i++){
+            flag=0;
+            for(j=2;j<=i/2;j++){
+                if(i%j==0)
+                {
+                    flag=1;
+                    break;
+                }
+            }
+            if(flag==0)
+            {
+               System.out.println(i+" is a prime number");
+            }
+        }
+        for(i=2;i<=num/2;i++)
+        {
+            if(num%i==0)
+            {
+                System.out.println(num+" is not a prime number");
+                flag=1;
+                break;
+            }
+        }
+        
+    }
+}
